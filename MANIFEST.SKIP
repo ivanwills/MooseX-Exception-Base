@@ -61,3 +61,6 @@ Debian_CPANTS.txt
 
 # Avoid archives of this distribution
 \bMooseX-Exception-Base-[\d\.\_]+
+
+errors.err
+tags

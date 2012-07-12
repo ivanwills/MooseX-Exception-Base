@@ -5,7 +5,7 @@ use Module::Build;
 my $builder = Module::Build->new(
 	module_name       => 'MooseX::Exception::Base',
 	license           => 'perl',
-	dist_author       => 'dev <dev@localhost>',
+	dist_author       => 'Ivan Wills <ivan.wills@gmail.com>',
 	dist_version_from => 'lib/MooseX/Exception/Base.pm',
 	requires          => {
 		'perl'             => 5.008,
