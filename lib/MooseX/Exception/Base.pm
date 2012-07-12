@@ -155,7 +155,7 @@ This documentation refers to MooseX::Exception::Base version 0.1.
 
 =head1 DESCRIPTION
 
-This module provides baseic helpers to make Moose exception objects, is is
+This module provides basic helpers to make Moose exception objects, is is
 somewhat similar to L<Exception::Class> in usage.
 
 =head1 SUBROUTINES/METHODS
