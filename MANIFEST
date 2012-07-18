@@ -17,4 +17,4 @@ t/perlcriticrc
 t/spelling.t
 t/throw.t
 META.json
-
+eg/throws.pl
