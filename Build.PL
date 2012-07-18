@@ -11,7 +11,6 @@ my $builder = Module::Build->new(
         'perl'             => 5.006,
         'Moose'            => 0,
         'Moose::Role'      => 0,
-        'MyException'      => 0,
         'Path::Class'      => 0,
         'version'          => 0,
     },
