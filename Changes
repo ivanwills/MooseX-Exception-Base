@@ -1,5 +1,10 @@
 Revision history for MooseX-Exception-Base
 
-0.0.1   Date/time
+0.0.2   2012-07-19
+        Removed accedentally added MyException from prereqs
+        Added example file using MooseX::Exception::Base
+        Fixed missing prereqs
+
+0.0.1   2012-07-12
         First version, released on an unsuspecting world.
 
