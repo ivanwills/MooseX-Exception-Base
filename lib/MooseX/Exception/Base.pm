@@ -14,7 +14,7 @@ use MooseX::Exception::Base::Stringify;
 
 use overload '""' => 'verbose';
 
-our $VERSION     = version->new('0.0.2');
+our $VERSION     = version->new('0.0.3');
 
 has error => (
     is             => 'rw',
@@ -102,7 +102,7 @@ MooseX::Exception::Base - Base class for exceptions
 
 =head1 VERSION
 
-This documentation refers to MooseX::Exception::Base version 0.0.2.
+This documentation refers to MooseX::Exception::Base version 0.0.3.
 
 =head1 SYNOPSIS
 
