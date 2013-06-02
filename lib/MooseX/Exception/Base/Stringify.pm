@@ -11,7 +11,7 @@ use strict;
 use warnings;
 use version;
 
-our $VERSION     = version->new('0.0.2');
+our $VERSION     = version->new('0.0.3');
 
 Moose::Util::meta_attribute_alias('MooseX::Exception::Stringify');
 
@@ -42,7 +42,7 @@ to be stringified.
 
 =head1 VERSION
 
-This documentation refers to MooseX::Exception::Base::Stringify version 0.0.2.
+This documentation refers to MooseX::Exception::Base::Stringify version 0.0.3.
 
 
 =head1 SYNOPSIS

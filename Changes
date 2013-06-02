@@ -1,5 +1,8 @@
 Revision history for MooseX-Exception-Base
 
+0.0.3   2013-05-21
+        Fixed so test works better in Windows
+
 0.0.2   2012-07-19
         Removed accedentally added MyException from prereqs
         Added example file using MooseX::Exception::Base
