@@ -37,8 +37,7 @@ __END__
 
 =head1 NAME
 
-MooseX::Exception::Base::Stringify - Traits class for attributes that are
-to be stringified.
+MooseX::Exception::Base::Stringify - Traits class for attributes that are to be stringified.
 
 =head1 VERSION
 
