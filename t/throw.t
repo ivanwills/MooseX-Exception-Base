@@ -15,6 +15,21 @@ has complex => (
     stringify      => sub {return $_},
 );
 
+package MyMultipleAttrs;
+use Moose; extends 'MooseX::Exception::Base';
+has first => (
+    is             => 'rw',
+    isa            => 'Str',
+    traits         => [qw{MooseX::Exception::Stringify}],
+    stringify      => sub {return $_},
+);
+has second => (
+    is             => 'rw',
+    isa            => 'Str',
+    traits         => [qw{MooseX::Exception::Stringify}],
+    stringify      => sub {return $_},
+);
+
 package main;
 
 use strict;
@@ -24,6 +39,9 @@ use Test::More;
 base();
 my_exception();
 complex();
+hashref_args();
+empty_attr();
+multiple_attrs();
 
 done_testing();
 
@@ -56,4 +74,33 @@ sub complex {
     is "$e", "test error\npre : The complex result : post", "Stringifys correctly";
 }
 
+sub hashref_args {
+    # Test calling throw with a hashref instead of a hash
+    eval { MooseX::Exception::Base->throw( { error => 'test error' } ) };
+    my $e = $@;
+    ok $e, 'Got an exception';
+    is "$e", "test error", "Stringifys correctly";
+}
+
+sub empty_attr {
+    # Test building an exception while omitting an attribute,
+    # in this case, omitting the 'complex' arg
+    eval { MyComplex->throw( error => 'test error' ) };
+    my $e = $@;
+    ok $e, 'Got an exception';
+    is "$e", "test error", "Stringifys correctly";
+}
+
+sub multiple_attrs {
+    eval {
+        MyMultipleAttrs->throw(
+            error  => 'test error',
+            first  => 'foo',
+            second => 'bar',
+        );
+    };
+    my $e = $@;
+    ok $e, 'Got an exception';
+    is "$e", "test error\nfoo\nbar", "Stringifys correctly";
+}
 
