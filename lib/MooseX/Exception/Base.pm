@@ -196,6 +196,10 @@ L<Moose>, L<Exception::Class>
 
 Ivan Wills - (ivan.wills@gmail.com)
 
+=head1 CONTRIBUTORS
+
+Adam Herzog - adam@adamherzog.com
+
 =head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2012 Ivan Wills (14 Mullion Close Hornsby Heights NSW Australia 2077).
