@@ -72,7 +72,6 @@ sub verbose {
     for my $attribute (@attributes) {
         my $name = $attribute->name;
         next if !defined $self->$name;
-        next if !$attribute->does('MooseX::Exception::Stringify');
 
         local $_ = $self->$name;
         push @errors,
@@ -84,8 +83,7 @@ sub verbose {
 
     $verbose = defined $verbose ? $verbose : $self->_verbose;
     my $stack
-        = !defined $verbose ? $self->_stack
-        : $verbose == 0     ? ''
+        = $verbose == 0     ? ''
         : $verbose == 1     ? (split /\n/, $self->_stack)[0]
         :                     $self->_stack;
 
