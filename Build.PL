@@ -18,8 +18,8 @@ my $builder = Module::Build->new(
         'Module::Build' => 0.38,
     },
     build_requires => {
-        'Test::More'       => 0,
-        'Test::NoWarnings' => 0,
+        'Test::More'     => 0,
+        'Test::Warnings' => 0,
     },
     add_to_cleanup     => [ 'MooseX-Exception-Base-*' ],
     create_makefile_pl => 'traditional',
