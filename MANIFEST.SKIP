@@ -65,3 +65,4 @@ Debian_CPANTS.txt
 errors.err
 tags
 .prove
+.*.tag
