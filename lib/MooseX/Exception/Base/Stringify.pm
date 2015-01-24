@@ -11,7 +11,7 @@ use strict;
 use warnings;
 use version;
 
-our $VERSION     = version->new('0.0.3');
+our $VERSION     = version->new('0.0.4');
 
 Moose::Util::meta_attribute_alias('MooseX::Exception::Stringify');
 
@@ -41,7 +41,7 @@ MooseX::Exception::Base::Stringify - Traits class for attributes that are to be 
 
 =head1 VERSION
 
-This documentation refers to MooseX::Exception::Base::Stringify version 0.0.3.
+This documentation refers to MooseX::Exception::Base::Stringify version 0.0.4.
 
 
 =head1 SYNOPSIS
