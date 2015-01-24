@@ -3,18 +3,11 @@
 use strict;
 use warnings;
 use Test::More;
-use Path::Class;
+use Test::Warnings;
 
-my $lib = file($0)->parent->parent->subdir('lib');
-my @files = $lib->children;
-
-while ( my $file = shift @files ) {
-    if ( -d $file ) {
-        push @files, $file->children;
-    }
-    elsif ( $file =~ /[.]pm$/ ) {
-        require_ok $file;
-    }
+BEGIN {
+    use_ok( 'MooseX::Exception::Base' );
+    use_ok( 'MooseX::Exception::Base::Stringify' );
 }
 
 diag( "Testing MooseX::Exception::Base $MooseX::Exception::Base::VERSION, Perl $], $^X" );
