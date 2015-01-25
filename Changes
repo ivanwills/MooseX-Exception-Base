@@ -2,6 +2,7 @@ Revision history for MooseX-Exception-Base
 
 0.0.5   YYYY-MM-DD
         Add additional tests (Adam Herzog)
+        Move over to Dist::Zilla (Adam Herzog)
 
 0.0.4   2015-01-24
         Updating for release of version 0.0.4
