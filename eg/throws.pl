@@ -31,7 +31,7 @@ use warnings;
 eval { Eg::Exception->throw(error => 'first error') };
 
 if ($@) {
-    print "Cought error: $@\n\n";
+    print "Caught error: $@\n\n";
 }
 
 bad();
@@ -40,6 +40,6 @@ sub bad {
     eval { Eg::Exception::Bad->throw(error => 'second error', bad => 'Very bad!') };
 
     if ($@) {
-        print "Cought bad error: $@\n\n";
+        print "Caught bad error: $@\n\n";
     }
 }
