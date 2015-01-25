@@ -8,10 +8,12 @@ use Test::More;
 eval { require Test::Spelling; Test::Spelling->import() };
 plan skip_all => "Test::Spelling required for testing POD spelling" if $@;
 
-add_stopwords(qw/
-    NSW
-    Hornsby
-    Stringifys
-    MERCHANTABILITY
-/);
+add_stopwords(<DATA>);
 all_pod_files_spelling_ok();
+
+__END__
+NSW
+Hornsby
+Stringifys
+MERCHANTABILITY
+Herzog
