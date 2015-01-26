@@ -1,8 +1,18 @@
 Revision history for MooseX-Exception-Base
 
-0.0.5   YYYY-MM-DD
+0.0.5   2015-01-26
         Add additional tests (Adam Herzog)
         Move over to Dist::Zilla (Adam Herzog)
+        Upped version for next release (Ivan Wills)
+        Update spelling stopwords, adding my name. (Adam Herzog)
+        Merge branch 'master' into move-to-dzil (Adam Herzog)
+        Update Changes (Adam Herzog)
+        Fix spelling error. Cought -> Caught. (Adam Herzog)
+        Convert to Dist::Zilla, including relocating tests. (Adam Herzog)
+        Update Changes file, and add myself to pod. (Adam Herzog)
+        Merge branch 'master' into improve-test-coverage (Adam Herzog)
+        Remove extraneous, unreachable code. (Adam Herzog)
+        Add additional tests, improving overall coverage. (Adam Herzog)
 
 0.0.4   2015-01-24
         Updating for release of version 0.0.4
