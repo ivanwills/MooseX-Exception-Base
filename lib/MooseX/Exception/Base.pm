@@ -190,6 +190,9 @@ Patches are welcome.
 
 =head1 ALSO SEE
 
+L<Throwable> probably should be use rather than this module for new projects
+as it's now best practice.
+
 L<Moose>, L<Exception::Class>
 
 =head1 AUTHOR
