@@ -1,5 +1,10 @@
 Revision history for MooseX-Exception-Base
 
+0.0.6   2015-08-04
+        Updating for release of version 0.0.6
+        Removed unneeded tag (Ivan Wills)
+        102839 - Added comment about using Throwable (Ivan Wills)
+
 0.0.5   2015-01-26
         Add additional tests (Adam Herzog)
         Move over to Dist::Zilla (Adam Herzog)
